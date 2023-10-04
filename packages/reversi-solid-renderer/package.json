@@ -1,0 +1,39 @@
+{
+  "name": "soku-game-reversi_solid_renderer",
+  "version": "1.0.0",
+  "description": "The example: soku-game-reversi_solid_renderer.",
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "pub": "unbuild && npm publish --access public"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "soku-game"
+  ],
+  "author": "SokuRitszZ<1062708758@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "typescript": "^5.2.2",
+    "unbuild": "^1.2.1"
+  },
+  "dependencies": {
+    "@soku-games/core": "^0.1.2",
+    "soku-game-reversi": "^0.2.2",
+    "solid-js": "^1.7.12"
+  }
+}

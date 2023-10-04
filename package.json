@@ -1,0 +1,24 @@
+{
+  "name": "monorepo-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@soku-games/core": "^0.1.2",
+    "soku-game-recorder": "^0.1.4",
+    "soku-game-reversi": "^0.2.2",
+    "soku-game-reversi_lit_renderer": "workspace:^",
+    "soku-game-reversi_solid_renderer": "workspace:^",
+    "solid-js": "^1.7.12"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^4.4.10",
+    "vite-plugin-solid": "^2.7.0"
+  }
+}
